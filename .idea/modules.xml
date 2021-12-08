@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ehrcasebasedsurveillance.iml" filepath="$PROJECT_DIR$/ehrcasebasedsurveillance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/ehrcasebasedsurveillance-api.iml" filepath="$PROJECT_DIR$/api/ehrcasebasedsurveillance-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/omod/ehrcasebasedsurveillance-omod.iml" filepath="$PROJECT_DIR$/omod/ehrcasebasedsurveillance-omod.iml" />
+    </modules>
+  </component>
+</project>
