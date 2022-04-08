@@ -5,35 +5,56 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
  
-    <!--
-    	See http://wiki.openmrs.org/display/docs/Module+liquibase+File for 
-    	documentation on this file.
-    
-        See http://www.liquibase.org/manual/home#available_database_refactorings
-        for a list of supported elements and attributes
-    -->
- 
- 	<!-- Uncomment the changeset below if you want to make the Item class persistable, see also Item and EHRCasebasedSurveillianceDaoTest -->
- 	<!--
-	<changeSet id="ehrcasebasedsurveillance-2016-08-02-12-21" author="raff">
-		<preConditions onFail="MARK_RAN">
-			<not><tableExists tableName="ehrcasebasedsurveillance_item"/></not>
-		</preConditions>
-		<comment>
-			Creating the ehrcasebasedsurveillance_item table
-		</comment>
-		<createTable tableName="ehrcasebasedsurveillance_item">
-			<column name="ehrcasebasedsurveillance_item_id" type="int" autoIncrement="true">
-				<constraints primaryKey="true" nullable="false"/>
-			</column>
-			<column name="uuid" type="char(38)">
-				<constraints nullable="false" unique="true"></constraints>
-			</column>
-			<column name="owner" type="int" />
-			<column name="description" type="varchar(255)" />
-		</createTable>
-        <addForeignKeyConstraint constraintName="ehrcasebasedsurveillance_item_owner_fk" baseTableName="ehrcasebasedsurveillance_item" baseColumnNames="owner"  referencedTableName="users"
-                                 referencedColumnNames="user_id" />
-    </changeSet> -->
+    <changeSet id="case-based-notify-contact:2022-01-07-15:33" author="akimaiyo">
+        <preConditions onFail="MARK_RAN" onError="WARN">
+            <dbms type="mysql"/>
+        </preConditions>
+        <comment>creating the notification_contacts table</comment>
+        <sql>
+            CREATE TABLE IF NOT EXISTS `notification_contacts` (
+            `contact_id` int(11) NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) DEFAULT NULL,
+			`email` varchar(255) DEFAULT NULL,
+			`phone` varchar(20) DEFAULT NULL,
+			`program_id` int(11) DEFAULT NULL,            
+            `created_date` datetime DEFAULT NULL,            
+            PRIMARY KEY (`contact_id`)
+            ) ENGINE=InnoDB CHARSET=utf8;
+        </sql>
+    </changeSet>
+
+	<changeSet id="case-based-notify-program:2022-01-07-15:33" author="akimaiyo">
+        <preConditions onFail="MARK_RAN" onError="WARN">
+            <dbms type="mysql"/>
+        </preConditions>
+        <comment>creating the notification_programs table</comment>
+        <sql>
+            CREATE TABLE IF NOT EXISTS `notification_programs` (
+            `program_id` int(11) NOT NULL AUTO_INCREMENT,
+            `name` varchar(255) DEFAULT NULL,
+			`description` varchar(255) DEFAULT NULL,			            
+            `created_date` datetime DEFAULT NULL,            
+            PRIMARY KEY (`program_id`)
+            ) ENGINE=InnoDB CHARSET=utf8;
+        </sql>
+    </changeSet>
+
+	<changeSet id="case-based-notify-results:2022-01-07-15:33" author="akimaiyo">
+        <preConditions onFail="MARK_RAN" onError="WARN">
+            <dbms type="mysql"/>
+        </preConditions>
+        <comment>creating the notification_results table</comment>
+        <sql>
+            CREATE TABLE IF NOT EXISTS `notification_results` (
+            `result_id` int(11) NOT NULL AUTO_INCREMENT,
+            `disease` varchar(255) DEFAULT NULL,
+			`lab_result` varchar(255) DEFAULT NULL,	
+			`notes` varchar(255) DEFAULT NULL,			            
+            `created_date` datetime DEFAULT NULL,  
+			`status` int(4) DEFAULT NULL,            
+            PRIMARY KEY (`result_id`)
+            ) ENGINE=InnoDB CHARSET=utf8;
+        </sql>
+    </changeSet>
  
 </databaseChangeLog>

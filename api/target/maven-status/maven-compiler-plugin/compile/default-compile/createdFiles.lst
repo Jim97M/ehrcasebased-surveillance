@@ -1,6 +1,0 @@
-org/openmrs/module/ehrcasebasedsurveillance/api/impl/EHRCasebasedSurveillianceServiceImpl.class
-org/openmrs/module/ehrcasebasedsurveillance/api/dao/EHRCasebasedSurveillianceDao.class
-org/openmrs/module/ehrcasebasedsurveillance/EHRCasebasedSurveillianceActivator.class
-org/openmrs/module/ehrcasebasedsurveillance/Item.class
-org/openmrs/module/ehrcasebasedsurveillance/EHRCasebasedSurveillianceConfig.class
-org/openmrs/module/ehrcasebasedsurveillance/api/EHRCasebasedSurveillianceService.class
