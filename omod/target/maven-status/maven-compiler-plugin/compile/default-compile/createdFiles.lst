@@ -1,3 +1,5 @@
+org/openmrs/module/ehrcasebasedsurveillance/web/controller/NotificationProgramController.class
+org/openmrs/module/ehrcasebasedsurveillance/web/controller/NotificationContactController.class
 org/openmrs/module/ehrcasebasedsurveillance/extension/html/AdminList.class
 org/openmrs/module/ehrcasebasedsurveillance/fragment/controller/UsersFragmentController.class
 org/openmrs/module/ehrcasebasedsurveillance/web/controller/EHRCasebasedSurveillianceController.class

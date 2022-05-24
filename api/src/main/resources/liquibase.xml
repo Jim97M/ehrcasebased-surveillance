@@ -50,7 +50,7 @@
             `disease` varchar(255) DEFAULT NULL,
 			`lab_result` varchar(255) DEFAULT NULL,	
 			`notes` varchar(255) DEFAULT NULL,			            
-            `created_date` datetime DEFAULT NULL,  
+            `created_date` datetime DEFAULT NULL,
 			`status` int(4) DEFAULT NULL,            
             PRIMARY KEY (`result_id`)
             ) ENGINE=InnoDB CHARSET=utf8;

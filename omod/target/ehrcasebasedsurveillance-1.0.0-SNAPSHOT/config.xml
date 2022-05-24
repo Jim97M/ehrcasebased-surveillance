@@ -7,7 +7,7 @@
 	<name>EHR Casebased Surveilliance</name>
 	<version>1.0.0-SNAPSHOT</version>
 	<package>org.openmrs.module.ehrcasebasedsurveillance</package>
-	<author>codehub</author>
+	<author>HealthIT</author>
 	<description>
 			Module to manage disease cases
 	</description>
@@ -17,23 +17,9 @@
 	<!-- <updateURL>https://modules.openmrs.org/modules/download/ehrcasebasedsurveillance/update.rdf</updateURL> -->
 	<!-- /Base Module Properties -->
 	
-	<require_version>1.11.6</require_version>
+	<require_version>2.6.0</require_version>
 
-	<require_modules>
-		<require_module version="${appframeworkVersion}">
-			org.openmrs.module.appframework
-		</require_module>
-		<require_module version="${uiframeworkVersion}">
-			org.openmrs.module.uiframework
-		</require_module>
-		<require_module version="${uicommonsModuleVersion}">
-			org.openmrs.module.uicommons
-		</require_module>
-		<require_module version="${appuiVersion}">
-			org.openmrs.module.appui
-		</require_module>
-	</require_modules>
-	
+
 	<!-- Extensions -->
 	<extension>
 		<point>org.openmrs.admin.list</point>
@@ -60,6 +46,15 @@
 	</privilege>
 	 /Required Privileges -->
 
+ <require_modules>
+		<!--	<require_module>org.openmrs.module.appframework</require_module>-->
+	 <require_module>
+		 org.openmrs.module.uiframework
+	 </require_module>
+		<!--		<require_module>org.openmrs.module.uicommons</require_module>-->
+		<!--		<require_module>org.openmrs.module.appui</require_module>-->
+		<!--		<require_module>org.openmrs.module.metadatadeploy</require_module> -->
+	</require_modules>
 
 	<!-- Required Global Properties 
 	<globalProperty>

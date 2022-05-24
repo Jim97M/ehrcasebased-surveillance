@@ -1,3 +1,5 @@
-/home/codehub/workspace/integrated_EHR/ehrcasebasedsurveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/web/controller/EHRCasebasedSurveillianceController.java
-/home/codehub/workspace/integrated_EHR/ehrcasebasedsurveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/extension/html/AdminList.java
-/home/codehub/workspace/integrated_EHR/ehrcasebasedsurveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/fragment/controller/UsersFragmentController.java
+/home/james/Documents/masterclass/ehrcasebased-surveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/web/controller/NotificationProgramController.java
+/home/james/Documents/masterclass/ehrcasebased-surveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/extension/html/AdminList.java
+/home/james/Documents/masterclass/ehrcasebased-surveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/web/controller/NotificationContactController.java
+/home/james/Documents/masterclass/ehrcasebased-surveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/fragment/controller/UsersFragmentController.java
+/home/james/Documents/masterclass/ehrcasebased-surveillance/omod/src/main/java/org/openmrs/module/ehrcasebasedsurveillance/web/controller/EHRCasebasedSurveillianceController.java

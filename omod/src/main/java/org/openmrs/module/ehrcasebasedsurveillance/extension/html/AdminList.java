@@ -20,6 +20,7 @@ import org.openmrs.module.web.extension.AdministrationSectionExt;
  * "ehrcasebasedsurveillance.title" heading. This extension is enabled by defining (uncommenting) it
  * in the config.xml file.
  */
+
 public class AdminList extends AdministrationSectionExt {
 	
 	/**

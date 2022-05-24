@@ -22,7 +22,18 @@
 
 	<context:component-scan base-package="org.openmrs.module.ehrcasebasedsurveillance.web.controller" />
 
+<!--	<bean class="org.openmrs.ui.framework.StandardModuleUiConfiguration">-->
+<!--		<property name="moduleId" value="${project.parent.artifactId}"/>-->
+<!--	</bean>-->
+<!--	<bean class="org.openmrs.ui.framework.StandardModuleUiConfiguration">-->
+<!--		<property name="moduleId" value="keaddonexample"/>-->
+<!--	</bean>-->
 	<bean class="org.openmrs.ui.framework.StandardModuleUiConfiguration">
 		<property name="moduleId" value="${project.parent.artifactId}"/>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+			</value>
+		</property>
 	</bean>
 </beans>
