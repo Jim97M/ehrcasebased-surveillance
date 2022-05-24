@@ -9,8 +9,10 @@ jq('#register').submit(function(e){
   e.preventDefault();
   jq('#submit').attr('disabled', 'disabled');
   jq('#submitDiagnosis').attr('disabled', 'disabled');
-  jq('validation-errors').hide();
+  jq('#validation-errors').hide();
   var formData = jq('#register').serialize();
+
+  var url = '/' + OPENMRS_CONTEXT_PATH+ '/ehrcasebasedsurveillance/'
 
   jq.ajax({
      url: url,
