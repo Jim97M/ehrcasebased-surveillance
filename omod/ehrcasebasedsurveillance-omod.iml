@@ -35,23 +35,24 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.module:uiframework-api:3.2.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.3.19" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.15" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.19" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.19" level="project" />
     <orderEntry type="module" module-name="ehrcasebasedsurveillance-api" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.6.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:2.6.4" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.6.4" level="project" />
+    <orderEntry type="module" module-name="ehrcasebasedsurveillance" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.11.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.openmrs.api:openmrs-api:1.11.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-collections:commons-collections:3.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-beanutils:commons-beanutils:1.7.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: commons-io:commons-io:1.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.azeckoski:reflectutils:0.9.14" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.velocity:velocity:1.6.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: commons-lang:commons-lang:2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: log4j:log4j:1.2.15" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.3.7.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:3.2.7.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.2.7.RELEASE" level="project" />

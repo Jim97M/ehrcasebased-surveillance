@@ -12,7 +12,7 @@ jq('#register').submit(function(e){
   jq('#validation-errors').hide();
   var formData = jq('#register').serialize();
 
-  var url = '/' + OPENMRS_CONTEXT_PATH+ '/ehrcasebasedsurveillance/'
+  var url = '/' + OPENMRS_CONTEXT_PATH+ '/ehrcasebasedsurveillance/programs'
 
   jq.ajax({
      url: url,
@@ -23,7 +23,10 @@ jq('#register').submit(function(e){
         emr.navigateTo({"applicationUrl": response.message});
      },
     error: function(response){
-      jq('#validation-errors-content').html()
+      jq('#validation-errors-content').html(response.responseJSON.globalerrors);
+      jq('#validation-errors').show();
+      jq('#submit').removeAttr('disabled');
+      jq('#cancelSubmission').removeAttr('disabled');
     }
   })
 })
