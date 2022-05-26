@@ -58,6 +58,10 @@ public class NotificationResults {
         this.status = status;
     }
 
+
+
+
+
     public Date getCreated_date(){
         return created_date;
     }
@@ -66,6 +70,12 @@ public class NotificationResults {
         this.created_date = created_date;
     }
 
+    public String getDisease(){
+        return disease;
+    }
 
+    public void setDisease(String disease){
+        this.disease = disease;
+    }
 
 }

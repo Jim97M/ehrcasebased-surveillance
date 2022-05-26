@@ -11,28 +11,33 @@ import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:8080/")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/program")
 public class NotificationProgramController {
 	
 	@Autowired
 	NotificationProgramDao npDao;
 	
-	@PostMapping("/programs")
+	@PostMapping("/save")
 	public String save(@RequestBody NotificationPrograms n) {
 		return npDao.save(n) + "Notification Program Saved Successfully";
 	}
 	
-	@GetMapping("/programs")
+	@GetMapping("/find")
 	public List<NotificationPrograms> findAll() {
 		return npDao.findAll();
 	}
+
+	@GetMapping()
+	public String findById(int program_id){
+		return npDao.findById(program_id) + "Notification Program found";
+	}
 	
-	@DeleteMapping("/programs/{id}")
+	@DeleteMapping("/delete/{id}")
 	public String deleteById(@PathVariable int program_id) {
 		return npDao.deleteById(program_id) + "Notification Program Deleted Successfully";
 	}
-	
-	@PutMapping("/programs/{id}")
+
+	@PutMapping("/update/{id}")
 	public String update(@RequestBody NotificationPrograms n, @PathVariable int program_id) {
 		return npDao.update(n, program_id) + "Updated Successfully";
 	}

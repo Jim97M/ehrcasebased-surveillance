@@ -59,7 +59,7 @@
             <label>Enter Create Date </label>
              <input name="createddate" type="date" />
            </div>
-             <button type="submit">Send</button>
+             <button type="submit">Register Results</button>
           </form>
         </div>
 

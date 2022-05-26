@@ -11,7 +11,7 @@ public class EmailNotificationConfig {
     private Properties properties;
 
     private void loadProperties() throws IOException{
-        String resourceName = "ehrcasebased-surveillance.properties";
+        String resourceName = "openmrs-runtime.properties";
 
         final File file = new File(OpenmrsUtil.getApplicationDataDirectory(), resourceName);
         final InputStream inputStream;
