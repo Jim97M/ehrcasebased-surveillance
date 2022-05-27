@@ -1,45 +1,73 @@
 <%
   ui.decorateWith("appui", "standardEmrPage", [title: "Notification Result"])
-          ui.includeJavaScript("", registerNotificationPrograms.js ) %>
+          ui.includeJavaScript("ehrcasebasedsurveillance", registerNotificationPrograms.js ) %>
 
           <style>
+                  <style type="text/css">
+                  .send-notification{
 
+          }
+                  .send-form{
+              display: inline-block;
+          }
+                  .result-disease{
+              flex-direction: row;
+          }
+
+                  .result-lab{
+              flex-direction: row
+          }
+
+                  .result-email{
+              flex-direction: row
+          }
+
+                  .result-notes{
+              flex-direction: row
+          }
+                  .result-status{
+              flex-direction: row
+          }
+                  .created-date{
+              flex-direction: row
+          }
+          button{
+            background-color: blue;
+          }
+        </style>
          </style>
 
-      <div>
-        <div>
+      <div class="container">
+        <div class="notification-header">
           <p>Notification Results</p>
         </div>
-      <form  >
-        <div>
+      <form name="results" id="results">
+        <div class="result-id">
           <label> Result Id</label>
            <input name="result_id" />
         </div>
-        <div>
+        <div class="result-lab">
           <label>Lab Result </label>
-          <input name="result" />
+          <input name="lab" />
         </div>
-        <div>
+        <div class="result-disease">
           <label> Disease</label>
           <input name="disease" />
         </div>
-     
-        <div>
-          <label> Lab Result</label>
-           <input name="lab_result" />
-        </div>
 
-       <div>
+       <div class="result-notes" >
          <label>Notes </label>
-         <input name="result_id"  />
+         <input name="notes"  />
        </div>
 
-      <div>
-        <label> Created Date</label>
+      <div class="created-date" >
+         <label> Created Date</label>
+         <input name="created_date" />
       </div>
-       <div>
+       <div class="status">
          <label> Status</label>
+         <input name="status" />
        </div>
     </form>
-        <Button >Create Notification</Button>
+        <button name="submit" >Create Notification</button>
       </div>

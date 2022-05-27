@@ -8,8 +8,8 @@ var navigationController;
 jq('#register').submit(function(e){
   e.preventDefault();
   jq('#submit').attr('disabled', 'disabled');
-  jq('#submitDiagnosis').attr('disabled', 'disabled');
-  jq('#validation-errors').hide();
+//  jq('#submitDiagnosis').attr('disabled', 'disabled');
+//  jq('#validation-errors').hide();
   var formData = jq('#register').serialize();
 
   var url = '/' + OPENMRS_CONTEXT_PATH+ '/ehrcasebasedsurveillance/program/save'
@@ -22,13 +22,13 @@ jq('#register').submit(function(e){
      success: function(response){
         emr.navigateTo({"applicationUrl": response.message});
      },
-    error: function(response){
-      jq('#validation-errors-content').html(response.responseJSON.globalizes);
-      jq('#validation-errors').show();
-      jq('#submit').removeAttr('disabled');
-      jq('#cancelSubmission').removeAttr('disabled');
-    }
-  })
+//    error: function(response){
+//      jq('#validation-errors-content').html(response.responseJSON.globalizes);
+//      jq('#validation-errors').show();
+//      jq('#submit').removeAttr('disabled');
+//      jq('#cancelSubmission').removeAttr('disabled');
+//    }
+//  })
 
 })
 
@@ -37,8 +37,8 @@ jq('#register').submit(function(e){
 jq('#result').submit(function(e){
   e.preventDefault()
   jq('#submit').attr('disabled', 'disabled');
-  jq('#submitResults').attr('disabled', 'disabled');
-  jq('#validation-errors').hide();
+//  jq('#submitResults').attr('disabled', 'disabled');
+//  jq('#validation-errors').hide();
 
   var formData = jq('#result').serialize();
 
@@ -52,12 +52,12 @@ jq('#result').submit(function(e){
      success: function(response){
        emr.navigateTo({"applicationUrl": response.message});
      },
-     error: function(response){
-         jq('#validation-errors-content').html(response.responseJSON.globalizes);
-         jq('#validation-errors').show();
-         jq('#submit').removeAttr('disabled');
-         jq('#cancelSubmission').removeAttr('disabled');
-     }
+//     error: function(response){
+//         jq('#validation-errors-content').html(response.responseJSON.globalizes);
+//         jq('#validation-errors').show();
+//         jq('#submit').removeAttr('disabled');
+//         jq('#cancelSubmission').removeAttr('disabled');
+//     }
    })
 
 })

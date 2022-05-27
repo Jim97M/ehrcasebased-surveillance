@@ -17,8 +17,8 @@
 			`email` varchar(255) DEFAULT NULL,
 			`phone` varchar(20) DEFAULT NULL,
 			`program_id` int(11) DEFAULT NULL,            
-            `created_date` datetime DEFAULT NULL,            
-            PRIMARY KEY (`contact_id`)
+            `created_date` datetime DEFAULT NULL,
+            PRIMARY KEY (`contact_id`),
             ) ENGINE=InnoDB CHARSET=utf8;
         </sql>
     </changeSet>
@@ -52,7 +52,8 @@
 			`notes` varchar(255) DEFAULT NULL,			            
             `created_date` datetime DEFAULT NULL,
 			`status` int(4) DEFAULT NULL,            
-            PRIMARY KEY (`result_id`)
+            PRIMARY KEY (`result_id`),
+            FOREIGN KEY(`program_id`) REFERENCES notification_programs(`program_id`)
             ) ENGINE=InnoDB CHARSET=utf8;
         </sql>
     </changeSet>
